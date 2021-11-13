@@ -1,0 +1,18 @@
+.container-home {
+    -fx-background-color: #0E0E10;
+    -fx-padding: 8px 24px;
+}
+
+.home-titulo{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.home-botao {
+    -fx-background-color: #E8E8E8;
+    -fx-text-fill: #201F24;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}

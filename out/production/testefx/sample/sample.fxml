@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="10"
+          vgap="10"
+          styleClass="container-login"
+>
+    <columnConstraints>
+        <ColumnConstraints minWidth="60" prefWidth="60" halignment="LEFT"/>
+        <ColumnConstraints prefWidth="200" maxWidth="Infinity" hgrow="ALWAYS"/>
+    </columnConstraints>
+
+
+    <Label
+            text="Seja bem-vindo"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="0"
+            styleClass="login-titulo"
+            GridPane.columnSpan="2"
+            GridPane.halignment="LEFT"
+    >
+        <GridPane.margin>
+            <Insets bottom="20" />
+        </GridPane.margin>
+    </Label>
+
+    <Label
+     text="Email: "
+     GridPane.columnIndex="0"
+     GridPane.rowIndex="1"
+     styleClass="login-form-label"
+    >
+    </Label>
+    <TextField
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="1"
+        fx:id="campoEmail"
+        styleClass="login-form-input"
+
+    >
+    </TextField>
+
+    <Label
+            text="Senha: "
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="2"
+            styleClass="login-form-label"
+    >
+    </Label>
+    <PasswordField
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="2"
+            fx:id="campoSenha"
+            styleClass="login-form-input"
+    >
+    </PasswordField>
+
+    <Button
+            text="Entrar"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="3"
+            onAction="#entrar"
+            styleClass="login-form-botao"
+            GridPane.columnSpan="2"
+            GridPane.halignment="CENTER"
+            maxWidth="Infinity"
+    >
+        <GridPane.margin>
+            <Insets top="15" />
+        </GridPane.margin>
+    </Button>
+
+</GridPane>

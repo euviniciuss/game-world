@@ -1,0 +1,31 @@
+.container-login {
+    -fx-background-color: #0E0E10;
+    -fx-padding: 8px 24px;
+}
+
+.login-titulo{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.login-form-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+}
+
+.login-form-input {
+    -fx-background-color: #201F24;
+    -fx-border-color: #34333B;
+    -fx-border-radius: 8px;
+    -fx-text-fill: #FFF;
+}
+
+.login-form-botao {
+    -fx-background-color: #E8E8E8;
+    -fx-text-fill: #201F24;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
