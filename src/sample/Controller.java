@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
 
-public class Controller {
+public class Controller  {
 
     @FXML
     private TextField campoEmail;
@@ -12,9 +12,10 @@ public class Controller {
     @FXML
     private PasswordField campoSenha;
 
+    //Método de autenticação
     public void entrar() {
-        boolean emailValido = campoEmail.getText().equals("teste@teste.com");
-        boolean senhaValida = campoSenha.getText().equals("123456");
+        boolean emailValido = campoEmail.getText().equals("");
+        boolean senhaValida = campoSenha.getText().equals("");
 
         if (emailValido && senhaValida) {
             System.out.println("Entrou");
@@ -25,5 +26,10 @@ public class Controller {
             System.out.println("Digite um email e uma senha valida!");
         }
     }
+
+
+
+
+
 
 }

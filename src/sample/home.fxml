@@ -1,40 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<GridPane
-        xmlns="http://javafx.com/javafx"
-        xmlns:fx="http://javafx.com/fxml"
-        fx:controller="sample.HomeController"
-        alignment="center"
-        hgap="10"
-        vgap="10"
-        styleClass="container-home"
->
-
-    <Label
-        text="Página Home"
-        GridPane.columnIndex="0"
-        GridPane.rowIndex="0"
-        GridPane.columnSpan="2"
-        GridPane.halignment="CENTER"
-        styleClass="home-titulo"
-    />
-
-    <Button
-        text="Voltar para a tela de login"
-        GridPane.columnIndex="0"
-        GridPane.rowIndex="1"
-        GridPane.columnSpan="2"
-        onAction="#voltar"
-        styleClass="home-botao"
-        GridPane.halignment="CENTER"
-        maxWidth="Infinity"
-    >
-    </Button>
-
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="385.0" styleClass="container-home" stylesheets="@styles/home.css" vgap="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+  <columnConstraints>
+      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="249.0" minHeight="0.0" prefHeight="43.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="619.0" minHeight="10.0" prefHeight="23.0" valignment="TOP" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="655.0" minHeight="10.0" prefHeight="314.0" valignment="TOP" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="655.0" minHeight="3.0" prefHeight="23.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="655.0" minHeight="10.0" prefHeight="144.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="655.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="74.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="logoGW" fitHeight="24.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logoGW.png" />
+         </image>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+         <image>
+            <Image url="@../img/user.png" />
+         </image>
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label alignment="TOP_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="224.0" styleClass="home-titulo" stylesheets="@styles/home.css" text="Ofertas da Semana" GridPane.columnSpan="3" GridPane.rowIndex="1">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="10.0" layoutY="78.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="300.0" styleClass="home-titulo" stylesheets="@styles/home.css" text="Recomendados para você" GridPane.columnSpan="4" GridPane.rowIndex="3">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <ScrollPane id="container-card-oferta" maxHeight="236.0" maxWidth="1.7976931348623157E308" prefHeight="236.0" prefWidth="361.0" styleClass="home-scroll-container" stylesheets="@styles/home.css" GridPane.columnSpan="4" GridPane.rowIndex="2">
+         <content>
+            <HBox id="cardsLayout" fx:id="cardsLayout" prefHeight="220.0" prefWidth="630.0" styleClass="home-container-box" stylesheets="@styles/home.css" />
+         </content>
+      </ScrollPane>
+   </children>
 </GridPane>

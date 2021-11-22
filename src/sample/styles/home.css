@@ -1,6 +1,9 @@
 .container-home {
+    -fx-pref-width: 385;
+    -fx-pref-height: 760;
+
     -fx-background-color: #0E0E10;
-    -fx-padding: 8px 24px;
+    -fx-padding: 0px 12px;
 }
 
 .home-titulo{
@@ -15,4 +18,12 @@
     -fx-text-fill: #201F24;
     -fx-font-size: 16px;
     -fx-font-weight: bold;
+}
+
+.home-scroll-container {
+    -fx-background-color: #0E0E10;
+}
+
+.home-container-box {
+    -fx-background-color: #0E0E10;
 }
