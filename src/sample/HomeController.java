@@ -47,27 +47,53 @@ public class HomeController implements Initializable {
         List<GameCard> cards = new ArrayList<>();
 
         //Instanciando o Card para utilizar dos métodos do GameCard e gerar novos Cards
-        GameCard card = new GameCard();
 
         //JOGO 1
-        card.setTitle("Watch Dogs");
-        card.setOldPrice("R$ 250");
-        card.setDiscount("- 100%");
-        card.setPrice("Gratuito");
-        card.setFavorite("♥");
-        card.setStoreIcon("/img/epicIcon.png");
-        card.setImgBanner("/img/gameWD.png");
+        GameCard card = new GameCard(
+                "Watch Dogs",
+                "/img/epicIcon.png",
+                "/img/gameWD.png",
+                "R$250",
+                "- 100%",
+                "Gratuito",
+                "♥"
+        );
         cards.add(card);
 
         //JOGO 2
-        card = new GameCard();
-        card.setTitle("Teste");
-        card.setOldPrice("R$ 250");
-        card.setDiscount("- 100%");
-        card.setPrice("Gratuito");
-        card.setFavorite("♥");
-        card.setStoreIcon("/img/psIcon.png");
-        card.setImgBanner("/img/gameCP.png");
+        card = new GameCard(
+                "Cyberpunk",
+                "/img/psIcon.png",
+                "/img/gameCP.png",
+                "R$250",
+                "- 90%",
+                "R$25",
+                "♥"
+        );
+        cards.add(card);
+
+        //JOGO 3
+        card = new GameCard(
+                "Spider-Man",
+                "/img/psIcon.png",
+                "/img/gameSpiderMan.png",
+                "R$250",
+                "- 70%",
+                "R$75",
+                "♥"
+        );
+        cards.add(card);
+
+        //JOGO 4
+        card = new GameCard(
+                "Cyberpunk 2077",
+                "/img/psIcon.png",
+                "/img/gameTerraria.png",
+                "R$20",
+                "- 50%",
+                "R$10",
+                "♥"
+        );
         cards.add(card);
 
         return cards;
@@ -76,6 +102,5 @@ public class HomeController implements Initializable {
     public void voltar() {
        Main.changeScreen("login");
     }
-
 
 }

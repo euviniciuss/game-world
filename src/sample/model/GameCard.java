@@ -9,6 +9,25 @@ public class GameCard {
     private String price;
     private String favorite;
 
+    public GameCard(
+            String gameTitle,
+            String gameStoreIcon,
+            String gameImgBanner,
+            String gameOldPrice,
+            String gameDiscount,
+            String gamePrice,
+            String gameFavorite
+    )
+    {
+        this.title = gameTitle;
+        this.storeIcon = gameStoreIcon;
+        this.imgBanner = gameImgBanner;
+        this.oldPrice = gameOldPrice;
+        this.discount = gameDiscount;
+        this.price = gamePrice;
+        this.favorite = gameFavorite;
+    }
+
     public String getTitle() {
         return title;
     }

@@ -12,10 +12,10 @@
 
 <HBox id="cardContainer" fx:id="cardContainer" prefHeight="208.87" prefWidth="162.0" style="-fx-border-radius: 21;" styleClass="card-container" stylesheets="@styles/card.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CardController">
    <children>
-      <GridPane fx:id="containerCard" prefHeight="220.0" prefWidth="172.0" styleClass="card-container">
+      <GridPane fx:id="containerCard" prefHeight="205.0" prefWidth="211.0" styleClass="card-container">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="106.0" />
-          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="69.0" minWidth="10.0" prefWidth="41.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="110.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="69.0" minWidth="10.0" prefWidth="36.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
@@ -34,13 +34,13 @@
                   <Image url="@../img/epicIcon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="gameBanner" fitHeight="115.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+            <ImageView fx:id="gameBanner" fitHeight="115.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                <image>
                   <Image url="@../img/gameWD.png" />
                </image>
             </ImageView>
             <Label fx:id="oldPrice" prefHeight="21.0" prefWidth="50.0" styleClass="card-old-price" text="R$ 250" GridPane.rowIndex="2" />
-            <Label fx:id="gameDiscount" prefHeight="21.0" prefWidth="41.0" styleClass="card-discount" text="- 100%" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Label fx:id="gameDiscount" alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="41.0" styleClass="card-discount" text="- 100%" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                <font>
                   <Font size="9.0" />
                </font>
