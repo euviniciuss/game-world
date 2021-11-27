@@ -17,12 +17,17 @@ public class HomeController implements Initializable {
     @FXML
     private HBox cardsLayout;
 
+    @FXML
+    private HBox RecommendedLayout;
+
     private List<GameCard> offersWeek;
+    private List<GameCard> recommend;
 
     //Método de inicialização dos Cards de jogos
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         offersWeek = new ArrayList<>(getOffersWeek());
+        recommend = new ArrayList<>(getRecommend());
 
         try {
             for (GameCard gameCard : offersWeek) {
@@ -34,6 +39,17 @@ public class HomeController implements Initializable {
                 cardController.setData(gameCard); //erro aq
 
                 cardsLayout.getChildren().add(cardBox);
+            }
+
+            for (GameCard gameCard : recommend) {
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("card.fxml"));
+
+                HBox cardBox = fxmlLoader.load();
+                CardController cardController = fxmlLoader.getController();
+                cardController.setData(gameCard); //erro aq
+
+                RecommendedLayout.getChildren().add(cardBox);
             }
 
         } catch (IOException e) {
@@ -98,6 +114,51 @@ public class HomeController implements Initializable {
 
         return cards;
     }
+
+    private List<GameCard> getRecommend() {
+        //Criando um array de gameCards e passando minhas propiedades para cada
+        List<GameCard> cards = new ArrayList<>();
+
+        //Instanciando o Card para utilizar dos métodos do GameCard e gerar novos Cards
+
+        //JOGO 1
+        GameCard card = new GameCard(
+                "Cyberpunk",
+                "/img/psIcon.png",
+                "/img/gameCP.png",
+                "R$250",
+                "- 90%",
+                "R$25",
+                "♥"
+        );
+        cards.add(card);
+
+        //JOGO 2
+        card = new GameCard(
+                "Halo 5",
+                "/img/MicrosoftIcon.png",
+                "/img/gameHalo.png",
+                "R$150",
+                "- 70%",
+                "R$ 45",
+                "♥"
+        );
+        cards.add(card);
+
+        //JOGO 3
+        card = new GameCard(
+                "Watch Dogs",
+                "/img/epicIcon.png",
+                "/img/gameWD.png",
+                "R$250",
+                "- 100%",
+                "Gratuito",
+                "♥"
+        );
+        cards.add(card);
+
+        return cards;
+    };
 
     public void voltar() {
        Main.changeScreen("login");

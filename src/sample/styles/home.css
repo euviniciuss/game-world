@@ -27,3 +27,10 @@
 .home-container-box {
     -fx-background-color: #0E0E10;
 }
+
+.home-footer-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: none;
+
+}
