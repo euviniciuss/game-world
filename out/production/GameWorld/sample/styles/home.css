@@ -1,0 +1,36 @@
+.container-home {
+    -fx-pref-width: 385;
+    -fx-pref-height: 760;
+
+    -fx-background-color: #0E0E10;
+    -fx-padding: 0px 12px;
+}
+
+.home-titulo{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.home-botao {
+    -fx-background-color: #E8E8E8;
+    -fx-text-fill: #201F24;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.home-scroll-container {
+    -fx-background-color: #0E0E10;
+}
+
+.home-container-box {
+    -fx-background-color: #0E0E10;
+}
+
+.home-footer-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: none;
+
+}

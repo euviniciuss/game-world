@@ -1,0 +1,40 @@
+.card-container {
+    -fx-padding: 2px 4px;
+    -fx-border-radius: 21px;
+    -fx-background-color: #201F24;
+    -fx-end-margin: 12px;
+}
+
+.card-button-container {
+    -fx-background-color: transparent;
+    -fx-border-width: 0px;
+    -fx-border-color: transparent;
+}
+
+.card-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+}
+
+.card-old-price {
+    -fx-font-size: 15px;
+    -fx-text-fill: #7C7D88;
+}
+
+.card-discount {
+    -fx-font-size: 9px;
+    -fx-text-fill: #f0f0f0;
+}
+
+.card-price {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E8E8E8;
+}
+
+.card-button-favorite {
+    -fx-padding: 2px;
+    -fx-background-color: #C72626;
+    -fx-text-fill: #fff;
+}
