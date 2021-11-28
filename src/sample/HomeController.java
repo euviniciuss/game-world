@@ -166,7 +166,7 @@ public class HomeController implements Initializable {
     }
 
     public void redirectFavorites() {
-        Main.changeScreen("login");
+        Main.changeScreen("favorite");
     }
 
     public void redirectConfig() {
