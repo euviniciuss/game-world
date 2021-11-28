@@ -1,0 +1,46 @@
+.container-settings {
+    -fx-pref-width: 385;
+    -fx-pref-height: 760;
+
+    -fx-background-color: #0E0E10;
+    -fx-padding: 10px 12px 0px 12px;
+}
+
+.settings-titulo{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.settings-name {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.settings-main {
+    -fx-padding: 12px 15px;
+    -fx-background-color: #201F24;
+}
+
+.settings-username {
+    -fx-text-fill: #7C7D88;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.settings-logout-button {
+    -fx-background-color: #C72626;
+    -fx-text-fill: #E8E8E8;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.favorites-back-button {
+    -fx-background-color: #201F24;
+    -fx-text-fill: #E8E8E8;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+

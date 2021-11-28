@@ -17,6 +17,7 @@ public class Main extends Application {
     private static Scene homeScene;
     private static Scene communityScene;
     private static Scene favoriteScene;
+    private static Scene settingsScene;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -52,6 +53,13 @@ public class Main extends Application {
         String favoriteCss = getClass().getResource("styles/favorites.css").toExternalForm();
         favoriteScene.getStylesheets().add(favoriteCss);
 
+        //Settings
+        Parent fxmlSettings = FXMLLoader.load(getClass().getResource("settings.fxml"));
+        settingsScene = new Scene(fxmlSettings, 385, 760);
+
+        String settingsCss = getClass().getResource("styles/settings.css").toExternalForm();
+        settingsScene.getStylesheets().add(settingsCss);
+
         primaryStage.setScene(loginScene);
         primaryStage.show();
     }
@@ -70,6 +78,9 @@ public class Main extends Application {
                 break;
             case "favorite":
                 stage.setScene(favoriteScene);
+                break;
+            case "settings":
+                stage.setScene(settingsScene);
                 break;
         }
 

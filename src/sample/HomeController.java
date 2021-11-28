@@ -170,7 +170,7 @@ public class HomeController implements Initializable {
     }
 
     public void redirectConfig() {
-        Main.changeScreen("login");
+        Main.changeScreen("settings");
     }
 
 }

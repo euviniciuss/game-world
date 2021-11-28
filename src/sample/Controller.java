@@ -14,8 +14,8 @@ public class Controller  {
 
     //Método de autenticação
     public void entrar() {
-        boolean emailValido = campoEmail.getText().equals("");
-        boolean senhaValida = campoSenha.getText().equals("");
+        boolean emailValido = campoEmail.getText().equals("teste@teste.com");
+        boolean senhaValida = campoSenha.getText().equals("123456");
 
         if (emailValido && senhaValida) {
             System.out.println("Entrou");
