@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="container-community" stylesheets="@styles/community.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CommunityController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="268.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="93.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="247.0" minHeight="0.0" prefHeight="47.0" valignment="TOP" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="610.0" minHeight="10.0" prefHeight="170.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="541.0" minHeight="10.0" prefHeight="464.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label prefHeight="47.0" prefWidth="194.0" styleClass="community-titulo" stylesheets="@styles/community.css" text="Comunidade" GridPane.columnSpan="2" />
+       <Button onAction="#voltar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" styleClass="community-comment-buttons" stylesheets="@styles/community.css" text="⇦ Voltar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+           <GridPane.margin>
+               <Insets top="10.0" />
+           </GridPane.margin>
+       </Button>
+      <HBox prefHeight="531.0" prefWidth="361.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <children>
+            <GridPane prefHeight="278.0" prefWidth="361.0" styleClass="community-comment-container" stylesheets="@styles/community.css">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="74.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="91.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/userIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="27.0" prefWidth="137.0" styleClass="community-comment-name" stylesheets="@styles/community.css" text="Marcus Vinicius" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+                  <Label layoutX="80.0" layoutY="37.0" prefHeight="27.0" prefWidth="89.0" styleClass="community-comment-date" stylesheets="@styles/community.css" text="16 de Fev 2021" GridPane.columnIndex="3" />
+                  <Label prefHeight="27.0" prefWidth="329.0" styleClass="community-comment-name" stylesheets="@styles/community.css" text="Um comentário qualquer escrito :)" GridPane.columnSpan="4" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" styleClass="community-comment-buttons" stylesheets="@styles/community.css" text="Curtir" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" styleClass="community-comment-buttons" stylesheets="@styles/community.css" text="Comentar" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" styleClass="community-comment-buttons" stylesheets="@styles/community.css" text="Compartilhar" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

@@ -82,7 +82,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="87.0" styleClass="home-footer-button" stylesheets="@styles/home.css">
+            <Button mnemonicParsing="false" onAction="#redirectCommunity" prefHeight="84.0" prefWidth="87.0" styleClass="home-footer-button" stylesheets="@styles/home.css">
                <graphic>
                   <ImageView fitHeight="48.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -91,7 +91,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="87.0" styleClass="home-footer-button" stylesheets="@styles/home.css">
+            <Button mnemonicParsing="false" onAction="#redirectFavorites" prefHeight="84.0" prefWidth="87.0" styleClass="home-footer-button" stylesheets="@styles/home.css">
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -100,7 +100,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="87.0" styleClass="home-footer-button" stylesheets="@styles/home.css">
+            <Button mnemonicParsing="false" onAction="#redirectConfig" prefHeight="84.0" prefWidth="87.0" styleClass="home-footer-button" stylesheets="@styles/home.css">
                <graphic>
                   <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                      <image>

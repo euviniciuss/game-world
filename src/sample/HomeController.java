@@ -160,8 +160,17 @@ public class HomeController implements Initializable {
         return cards;
     };
 
-    public void voltar() {
-       Main.changeScreen("login");
+    // Redirecionamento para o menu posicionado na parte inferior
+    public void redirectCommunity() {
+        Main.changeScreen("community");
+    }
+
+    public void redirectFavorites() {
+        Main.changeScreen("login");
+    }
+
+    public void redirectConfig() {
+        Main.changeScreen("login");
     }
 
 }

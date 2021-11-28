@@ -15,6 +15,7 @@ public class Main extends Application {
 
     private static Scene loginScene;
     private static Scene homeScene;
+    private static Scene communityScene;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -36,6 +37,13 @@ public class Main extends Application {
         String homeCss = getClass().getResource("styles/home.css").toExternalForm();
         homeScene.getStylesheets().add(homeCss);
 
+        //Community
+        Parent fxmlComunnity = FXMLLoader.load(getClass().getResource("community.fxml"));
+        communityScene = new Scene(fxmlComunnity, 385, 760);
+
+        String communityCss = getClass().getResource("styles/community.css").toExternalForm();
+        communityScene.getStylesheets().add(communityCss);
+
         primaryStage.setScene(loginScene);
         primaryStage.show();
     }
@@ -48,6 +56,9 @@ public class Main extends Application {
                 break;
             case "home":
                 stage.setScene(homeScene);
+                break;
+            case "community":
+                stage.setScene(communityScene);
                 break;
         }
 
